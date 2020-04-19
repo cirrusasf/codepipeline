@@ -1,0 +1,18 @@
+version: 0.2
+
+env:
+  variables:
+    CMR_DOMAIN: "https://cmr.uat.earthdata.nasa.gov"
+    TOKEN_LAMBDA: ingest-test-cmr-token
+    TOKEN_BUCKET: ingest-test-aux
+    TOKEN_KEY: cached-cmr-auth-token
+
+phases:
+  install:
+    runtime-version:
+      python: 3.8
+    commands:
+      - pip3 install requests
+  build:
+    commands:
+      - python3 test.py
