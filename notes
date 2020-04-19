@@ -1,0 +1,22 @@
+proccess of codepipeline
+
+1.create codebuild
+
+project name (mypipeline)
+
+aws/codebuild/ubuntu:standard:4.0
+
+
+2. create codepipeline
+
+pipeline name (mypipeline)
+
+A. source github
+
+repo name branch name
+
+B. build stage
+
+add build project name (mypipeline)
+
+
