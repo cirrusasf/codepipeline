@@ -1,5 +1,6 @@
 def main():
-    print("hello, your first codepipeline project")
+    print("hello, first try the codepipile successfully!")
+    print("change the source code")
 
 if __name__ == "__main__":
 
